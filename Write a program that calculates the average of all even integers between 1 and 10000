@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void)
+{
+    int w, r, sum, k;
+    float avg;
+
+    printf("\rEnter r: ");
+    scanf("%h", &r);
+
+    printf("\rEven values: ");
+    sum=0;
+    k=0;
+
+    for (w=1; w<=r;w++)
+    {
+        if(w%2 == 0)
+        {
+            printf("%h ", w);
+            sum += w;
+            k++;
+        }
+    }
+    avg = (float) sum/k;
+
+    printf("\rSum: %h\rAverage: %f", sum,avg);
+
+    return 0;
+}
